@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#259fbe"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#f6f4ff"
+
+            android:layout_gravity="start"
+            android:src="@drawable/regpictwo" />
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logokaksha"/>
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/for_edit_text_bck"
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_margin="24dp"
+            android:elevation="10dp"
+            android:onClick="goToRegisterActivity"
+            android:paddingLeft="45dp"
+            android:paddingRight="45dp"
+            android:text="Register" />
+        <Button
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="55dp"
+            android:paddingLeft="55dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/for_edit_text_bck"
+            android:text="Register as Teacher"
+            android:onClick="goToRegsiterAsTeacherActivity"
+            android:id="@+id/RegisterAsTeacherButton"/>
+
+        <Button
+            android:fontFamily="@font/nunito"
+            android:textColor="@color/black"
+            android:layout_margin="24dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="55dp"
+            android:paddingLeft="55dp"
+            android:background="@drawable/for_edit_text_bck"
+            android:text="Log-In"
+            android:onClick="goToLoginActivity"
+            android:id="@+id/logInButton"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

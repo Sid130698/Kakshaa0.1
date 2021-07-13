@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnnouncementActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/topTextAnnFrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff2fb"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:layout_marginLeft="14dp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="#8617232a"
+                android:text="        Add \nAnnouncement"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:textSize="25sp"/>
+            <ImageView
+                android:layout_marginLeft="70dp"
+                android:paddingTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="right"
+                android:src="@drawable/addannouncementbck"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+
+
+                />
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:lines="1"
+            android:hint="Put Title here...."
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+    android:id="@+id/announcementTitleEditText"
+            android:background="@drawable/for_edit_text_bck"
+            android:backgroundTint="#4565ccb8"
+            android:layout_marginRight="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/for_edit_text_bck"
+        android:textAlignment="textStart"
+        android:gravity="start"
+        android:backgroundTint="#86def2f1"
+        android:hint="Put Announcement Here...."
+        android:paddingTop="13dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="7dp"
+        android:paddingLeft="7dp"
+        android:layout_gravity="start"
+        android:layout_marginRight="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/announcementEditText"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:textColor="#e83cb7"
+        android:background="@drawable/for_edit_text_bck"
+
+        android:paddingLeft="44dp"
+        android:paddingRight="44dp"
+
+        android:onClick="postThisAnnouncement"/>
+    </LinearLayout>
+
+</RelativeLayout>
